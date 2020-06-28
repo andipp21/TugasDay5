@@ -5,6 +5,7 @@ fun main(){
     longValues()
     floatValues()
     doubleValues()
+    stringValues()
 }
 
 class IntegerValues {
@@ -16,8 +17,8 @@ class IntegerValues {
 }
 
 fun longValues(){
-    val longMax:Long = Long.MAX_VALUE;
-    val longMin:Long = Long.MIN_VALUE;
+    val longMax:Long = Long.MAX_VALUE
+    val longMin:Long = Long.MIN_VALUE
     println("Tipe Data Long")
     println("Long Max Values: $longMax")
     println("Long Min Values: $longMin")
@@ -32,9 +33,18 @@ fun floatValues(){
 }
 
 fun doubleValues(){
-    val doubleMax = Double.MAX_VALUE
-    val doubleMin = Double.MIN_VALUE
+    val doubleMax:Double = Double.MAX_VALUE
+    val doubleMin:Double = Double.MIN_VALUE
     println("Tipe Data Double")
     println("Double Max Values: $doubleMax")
     println("Double Min Values: $doubleMin")
+}
+
+fun stringValues(){
+    val stringVal = StringBuilder()
+    val stringMax = stringVal.capacity()
+
+    println("Tipe Data String")
+    println("String Max Values : $stringMax")
+    println("String Min Values : 0")
 }
